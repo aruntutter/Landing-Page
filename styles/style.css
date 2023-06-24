@@ -9,6 +9,12 @@
   outline: none;
 }
 
+:root {
+  --clr-grey: #6c757d;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -35,9 +41,147 @@ li {
   list-style: none;
 }
 
-.container {
+/* .container {
   max-width: 1140px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+} */
+
+/* MAIN */
+.main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-holder-one {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+/* CONTAINER ONE */
+.container-one {
+  width: 840px;
+  height: 534px;
+  position: relative;
+  background-image: url('../assets/images/desktop-image-hero-1.jpg');
+}
+
+nav ul {
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  width: 100%;
+  height: 100%;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+li a {
+  color: var(--clr-white);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* CONTAINER TWO */
+
+.container-two {
+  width: 696px;
+  height: 534px;
+  padding: 100px 155px 100px 120px;
+  position: relative;
+}
+
+.container-two h1 {
+  line-height: 2.5rem;
+}
+
+.container-two p {
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: var(--clr-grey);
+}
+
+.container-two h4 {
+  margin-top: 1rem;
+
+}
+
+.shop-now {
+  letter-spacing: 15px;
+  color: var(--clr-black);
+}
+
+.arrow {
+  margin-left: 15px;
+  font-size: 1.9rem;
+  color: var(--clr-black);
+}
+
+.arrows {
+  margin-left: 0;
+  width: 170px;
+  height: 76px;
+  background-color: var(--clr-black);
+  position: absolute;
+  top: 66%;
+  left: 60%;
+  transform: translate(-49%, -44%);
+}
+
+.arrows h1 a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--clr-grey);
+}
+
+/* CONTAINER HOLDER TWO */
+/* CONTAINER THREE */
+.container-holder-two {
+  height: 266px;
+  width: 1519px;
+  display: flex;
+}
+
+.container-three{
+  width: 27.7%;
+  height: auto;
+  background-image: url('../assets/images/image-about-dark.jpg');
+}
+
+/* CONTAINER FOUR */
+.container-four{
+  width: 44.6%;
+  height: auto;
+  padding: 4rem 2.5rem ;
+}
+
+.container-four h2{
+  font-size: 16px;
+  letter-spacing: 8px;
+}
+.container-four p{
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 1.5rem;
+  color: var(--clr-grey);
+}
+
+/* CONTAINER FIVE */
+.container-five {
+  width: 27.7%;
+  height: auto;
+  background-image: url('../assets/images/image-about-light.jpg');
 }

@@ -138,6 +138,7 @@ li a {
   top: 66%;
   left: 60%;
   transform: translate(-49%, -44%);
+  border-radius: 0 18px 18px 0;
 }
 
 .arrows h1 a {
